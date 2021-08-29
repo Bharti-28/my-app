@@ -61,14 +61,12 @@ const EntertainmentCardSlider = () => {
 
     return (
        <>
-          <div className="container mx-auto px-10">
             <Slider {...settings}>
                 {
                     EntertainmentImage.map((image) => (
                         <EntertainmentCard src={image} />
                     ))}
             </Slider>
-          </div>
        </>
     );
 }
